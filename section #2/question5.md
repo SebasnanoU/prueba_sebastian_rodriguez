@@ -6,14 +6,14 @@ This point seeks to assess your ability to analyze and solve software design pro
 ### Question:
 A web system must be implemented to read radiology studies. Radiologists will enter the system and must be able to select pending studies and fill out a form with their findings. The system receives the studies to be performed from the hospital information system (HIS) and must send the results back. Additionally, the HIS will periodically consult statistics on the operation of the reading system. Due to health system regulations, it is not possible to store privileged information as plain text; that is, it must be encrypted:
 
-![Question 4 architecture](./question5.1.png)
+![Question 5.1 architecture](./question5.1.png)
 
 
 ### New radiological study
 
 When there is a new message to read, HIS will send a JSON message with the following structure:
 
-![Question 4 architecture](./question5.2.png)
+![Question 5.2 architecture](./question5.2.png)
 
 You must record this information in the system and make it available to radiologists. Please note that patient information cannot be stored as plain text.
 
@@ -49,7 +49,7 @@ Once the form is submitted, the system must send the information via POST to the
 
 The content of the message must be:
 
-![Question 4 architecture](./question5.3.png)
+![Question 5.3 architecture](./question5.3.png)
 
 ### Statistics
 
@@ -61,7 +61,7 @@ As part of a business intelligence system, HIS wants to know the number of studi
 
 To which you must respond with a JSON in the following way:
 
-![Question 4 architecture](./question5.4.png)
+![Question 5.4 architecture](./question5.4.png)
 
 Also, as part of a scientific study, you want to know the mean intensity and mean volumes for each BIRADS value and each age range. For this, a GET request will be made with the following parameters:
 
@@ -73,7 +73,7 @@ The age range is closed-open, for example [18, 24). That is, all studies that at
 
 To which you should respond with a JSON of the form
 
-![Question 4 architecture](./question5.5.png)
+![Question 5.5 architecture](./question5.5.png)
 
 ### Solution
 
@@ -87,4 +87,7 @@ To which you should respond with a JSON of the form
 | 6                         | System                  | Guardar JSON                    | Poner a disposicion la informacion a los radiologos  |
 | 7                         | System                  | Responder enviado a HIS         | Generar las estadisticas de tiempos de atencion      |
 
+### Case of use
+  
+![Solution 5 architecture](./Solution5.png)
   
