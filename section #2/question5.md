@@ -89,5 +89,5 @@ To which you should respond with a JSON of the form
 
 ### Case of use
   
-![Solution 5 architecture](./Solution5.png)
+![Solution 5 architecture](./solution5.png)
   
