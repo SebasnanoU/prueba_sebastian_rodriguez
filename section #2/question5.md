@@ -76,3 +76,15 @@ To which you should respond with a JSON of the form
 ![Question 4 architecture](./question5.5.png)
 
 ### Solution
+
+| ID DE HISTORIA DE USUARIO | Como  <tipo de usuario> | Quiero  <realizar alguna tarea> | para que pueda  <el logro algún objetivo>            |
+|---------------------------|-------------------------|---------------------------------|------------------------------------------------------|
+| 1                         | Radiologys              | Enter the system                | Tener acceso a la plataforma                         |
+| 2                         | Radiologys              | New study                       | Crear un nuevo estudio                               |
+| 3                         | Radiologys              | Read study                      | leer los estudios                                    |
+| 4                         | System                  | Generar notificaciones          | Cuando HIS envie informacion estar enterado          |
+| 5                         | System                  | Leer el JSON                    | Tener toda la informacion                            |
+| 6                         | System                  | Guardar JSON                    | Poner a disposicion la informacion a los radiologos  |
+| 7                         | System                  | Responder enviado a HIS         | Generar las estadisticas de tiempos de atencion      |
+
+  
